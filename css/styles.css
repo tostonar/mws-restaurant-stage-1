@@ -181,9 +181,7 @@ nav h1 a {
   background-color: #ccc;
   display: block;
   margin: 0;
-  max-width: 100%;
-  /* min-height: 248px; */
-  min-width: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -344,9 +342,18 @@ nav h1 a {
   color: #666;
 }
 
-@media only screen and (max-width: 713px) {
+
+@media only screen and (max-width: 420px) {
   #restaurants-list li {
     max-width: 100%;
+  }
+}
+
+@media only screen and (421px <= width <= 713px) {
+  #restaurants-list li img{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
